@@ -1,5 +1,17 @@
 body {
-  background-color: #eaeaea;
+  /* background-color: #eaeaea; */
+
+  background: #abbaab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #abbaab
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #abbaab
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .search {
   /* устанавливаем необходимую ширину формы в зависимости от дизайна
@@ -81,4 +93,23 @@ body {
 ** Chrome и Safari можно было стилизовать инпуты */
 input[type='search'] {
   -webkit-appearance: none;
+}
+.form_country {
+  display: flex;
+  justify-content: center;
+}
+
+.flag {
+  width: 350px;
+  height: 335px;
+}
+.text {
+  font-weight: bold;
+}
+.listCountry {
+  font-size: 24px;
+  font-weight: bold;
+  max-width: 500px;
+  text-align: left;
+  margin: 0 auto;
 }
